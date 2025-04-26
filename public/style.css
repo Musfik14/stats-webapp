@@ -1,0 +1,166 @@
+/* Base & Container */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+    padding: 30px;
+    margin: 0;
+  }
+  
+  /* Assignment Header */
+  .assignment-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  .assignment-header .logo {
+    height: 80px;
+    margin-right: 1rem;
+  }
+  .assignment-header .header-text h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    color: #222;
+  }
+  .assignment-header .header-text p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+  }
+  
+  /* Page Title */
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* Simple Tabs */
+  .tabs {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .tab {
+    background: #ddd;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    margin-right: 0.5rem;
+    transition: background 0.2s;
+  }
+  .tab:hover { background: #ccc; }
+  .tab.active {
+    background: #fff;
+    font-weight: bold;
+  }
+  
+  /* Tab‐Content Wrapper */
+  .tab-content {
+    display: none;
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 2rem;
+  }
+  .tab-content.active { display: block; }
+  
+  /* Cards */
+  .card {
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  .card-header {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Z-Test Palette */
+  .z-card .card-header {
+    background: linear-gradient(135deg, #4e89ae 0%, #43658b 100%);
+    color: #fff;
+  }
+  .z-card .card-body { background-color: #edf5fc; }
+  .btn-z {
+    background: #43658b;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .btn-z:hover { background: #4e89ae; transform: translateY(-2px); }
+  
+  /* T-Test Palette */
+  .t-card .card-header {
+    background: linear-gradient(135deg, #65c18c 0%, #38a3a5 100%);
+    color: #fff;
+  }
+  .t-card .card-body { background-color: #e8fdf5; }
+  .btn-t {
+    background: #38a3a5;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .btn-t:hover { background: #65c18c; transform: translateY(-2px); }
+  
+  /* χ²-Test Palette */
+  .chi2-card .card-header {
+    background: linear-gradient(135deg, #f6ae2d 0%, #f26419 100%);
+    color: #fff;
+  }
+  .chi2-card .card-body { background-color: #fff8e1; }
+  .btn-chi2 {
+    background: #f26419;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .btn-chi2:hover { background: #f6ae2d; transform: translateY(-2px); }
+  
+  /* Forms & Inputs */
+  .form-label {
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+  input.form-control,
+  select.form-select {
+    margin-bottom: 1rem;
+  }
+  
+  /* Results & Steps */
+  .fs-5 {
+    color: #111;
+    margin: 1rem 0;
+  }
+  pre {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+  
+  /* Chart */
+  #z-chart {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-top: 1.5rem;
+  }
+  
+  /* Tab-specific hover shades */
+  .tabs .tab:nth-child(1):hover { background: #edf5fc; }
+  .tabs .tab:nth-child(2):hover { background: #e8fdf5; }
+  .tabs .tab:nth-child(3):hover { background: #fff8e1; }
+  
